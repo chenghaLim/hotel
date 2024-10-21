@@ -38,26 +38,6 @@
 - **Development Tools**:
     - IntelliJ IDEA
     - Postman (API 테스트)
-
----
-
-## 📂 **프로젝트 구조**
-
-src
-│── main
-│   ├── java/com/hotel/lodgingCommander
-│   │   ├── controller  
-│   │   ├── service          
-│   │   ├── repository        
-│   │   ├── model
-│   │   │   ├── entity      
-│   │   │   ├── model         
-│   │   ├── config           
-│   ├── resources
-│       ├── static            # 정적 파일 (CSS, JS)
-│── test
-├── java/com/hotel/lodgingCommander  # 테스트 케이스
-
 ---
 
 ### 🎉 **감사합니다!**
