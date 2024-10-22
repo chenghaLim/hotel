@@ -10,4 +10,6 @@ import java.util.List;
 
 @Repository
 public interface ImgRepository extends JpaRepository<Img, Long>,ImgRepositoryCustom {
+
+    Img findByPath(String path);
 }

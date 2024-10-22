@@ -26,4 +26,9 @@ public class ImgController {
         return ResponseEntity.ok().contentType(MediaType.IMAGE_PNG).body(service.getImage(path));
     }
 
+    @DeleteMapping("/{path}")
+    public ResponseEntity<?> delete(@PathVariable String path) {
+        return ResponseEntity.ok(service.delete(path));
+    }
+
 }

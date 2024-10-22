@@ -97,4 +97,11 @@ public class ImgServiceImpl implements ImgService {
                 .getObject(s3bucket, path)
                 .getObjectContent());
     }
+
+    @Override
+    public Boolean delete(String path) {
+        amazonS3.deleteObject(s3bucket,path);
+        imgRepository.delete(imgRepository.findByPath(path));
+        return Boolean.TRUE;
+    }
 }
