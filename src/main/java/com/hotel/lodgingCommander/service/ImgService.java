@@ -6,5 +6,7 @@ import java.io.IOException;
 
 public interface ImgService {
 
-    Boolean save(MultipartFile image) throws IOException;
+    Boolean save(MultipartFile image,Long roomId);
+
+    byte[] getImage(String path) throws IOException;
 }
